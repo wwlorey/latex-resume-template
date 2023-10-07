@@ -2,6 +2,8 @@
 
 This template is based on the resume format of Missouri University of Science and Technology's Career Opportunities and Employer Relations department. It is a simple, time tested resume format that removes some of COER's recommendations which I believe to be unnecessary (address, objective statement, etc.). Resumes written in this format are easily skimmed, important information stands out, and page real estate is maximized.
 
+## Preview
+![Resume Preview](resume-preview.png)
 ## Requirements
 
 * `xelatex`
