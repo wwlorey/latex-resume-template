@@ -1,0 +1,137 @@
+\documentclass{article}
+
+\usepackage[left=.55in,right=.55in,top=.35in,bottom=.35in]{geometry}
+\usepackage{changepage}
+\usepackage{enumitem}
+\usepackage{fontspec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{titling}
+
+\setmainfont{Cambria}
+
+\pagenumbering{gobble}
+
+\titleformat{\section}
+{\Large}
+{}
+{0em}
+{}
+[\titlerule]
+
+\titlespacing{\section}
+{0em}
+{0em}
+{.8em}
+
+\def\indentamount{1em}
+
+\setlength\parindent{\indentamount}
+
+\setlength{\parskip}{.1em}
+
+\renewcommand{\maketitle}{
+    \begin{center}
+    {\huge\bfseries\theauthor}
+
+    \vspace{.6em}
+
+    \href{mailto:joe@miner.com}{joe@miner.com} 
+    \quad
+    \href{https://joeminer.com}{joeminer.com}
+
+    \vspace{-.8em}
+    \end{center}
+}
+
+\newcommand{\getsubsection}[2]{
+    \noindent
+    \begin{tabular}[t]{@{}l} 
+        \large{#1}
+    \end{tabular}
+    \hfill
+    \begin{tabular}[t]{l@{}}
+        #2
+    \end{tabular}
+}
+
+\newcommand{\getsubsubsection}[2]{
+    \noindent
+    \begin{tabular}[t]{@{}l} 
+        \textbf{#1}
+    \end{tabular}
+    \hfill
+    \begin{tabular}[t]{l@{}}
+        \emph{#2}
+    \end{tabular}
+}
+
+\newenvironment{ul}{
+    \begin{itemize}[topsep=\parskip, partopsep=\parskip]
+    \itemsep-.12em
+    \let\olditem\item
+    \renewcommand\item{\olditem}
+}{
+    \vspace{.45em}
+    \end{itemize}
+}
+
+\begin{document}
+
+\title{Joe A. Miner Resume}
+\author{Joe A. Miner}
+
+\maketitle
+
+\section{Education}
+
+Missouri University of Science and Technology (Missouri S\&T) 
+\hfill
+Spring 2022
+
+\textbf{B.S. Computer Engineering}
+\hfill
+\textbf{GPA 4.0/4.0}
+
+\textbf{Minor: Computer Science}
+
+\section{Experience}
+
+\begin{adjustwidth}{\indentamount}{0pt}
+
+\getsubsection{Garmin International}{Rolla, MO}
+
+\getsubsubsection{Software Engineer}{June 2022 -- Present}
+
+\begin{ul}
+    \item{Designed and implemented embedded software solutions in C, C++, and ASM for cutting-edge navigation and fitness products, contributing to the development of flagship Garmin products and helping achieve their market-leading status}
+    \vspace{-1.7em}
+\end{ul}
+
+\getsubsubsection{Software Engineering Intern}{May 2021 -- Aug 2021}
+
+\begin{ul}
+    \item{Implemented testing and verification software in C for a fleet of Garmin avionics displays for small aircraft, keeping the project adherent to FAA regulations and ensuring robust, correct code}
+\end{ul}
+
+\end{adjustwidth}
+
+\getsubsection{Missouri S\&T}{Rolla, MO}
+
+\getsubsubsection{Mascot in Chief}{Aug 1870 -- Present}
+
+\begin{ul}
+    \item{Represented the university for over 150 years as the institution's sole mascot, resulting in a precipitous increase in school pride}
+    \item{Carried a pickaxe and side arm at all times, demonstrating a high degree of commitment to the mascot craft}
+\end{ul}
+
+\vspace{-.4em}
+
+\section{Honors and Activities}
+
+Association of Computing Machinery -- \textbf{Member}
+
+Missouri S\&T -- \textbf{Dean's List} (Fall 1871 -- Spring 2022)
+
+\end{document}
+
