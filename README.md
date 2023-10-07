@@ -8,6 +8,7 @@ Why is this a LaTeX template? Because once you understand this powerful markup l
 
 * `xelatex` (Used to build our PDF document from the `.tex` file. This often comes with the distribution of LaTeX you download.)
 * The LaTeX packages in `resume.tex` (These may come with your distribution of LaTeX. If not, download them individually.)
+* Cambria font (This should be downloaded on your system if it is not already, assuming you want to use this font. The Cambria font is included in this repo.)
 
 ## Usage
 
